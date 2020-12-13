@@ -3,7 +3,7 @@
 Exercício executado com base no aprendizado do curso da *Alura* de _orientação a objetos com JavaScript_.
 
 
-#### Adicionando comportamentos
+### Adicionando comportamentos
 - [x] Comportamentos de classes
 - [x] Atributos Privados
 - [x] Proposta de campos Privados
