@@ -32,3 +32,6 @@ Exercício executado com base no aprendizado do curso da *Alura* de _orientaçã
 - [x] Utilizando Construtores
 - [x] Atributos estáticos
 - [x] Tipos de atributos
+
+
+## Parte 2 - Interfaces e Herança em Orientação a Objetos.
