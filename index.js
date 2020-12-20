@@ -1,6 +1,7 @@
 /* IMPORTANDO CLASSES DE OUTROS ARQUIVOS */
 import {Cliente} from "./Cliente.js"
 import {ContaCorrente} from "./ContaCorrente.js"
+import { ContaPoupanca } from "./contaPoupanca.js";
 
 /* Nao esqueca de gerar o package.jason */
 
@@ -30,4 +31,5 @@ contaCorrenteRicardo.transferir(200, ContaCorrenteAlice);
 console.log(contaCorrenteRicardo);
 console.log(ContaCorrenteAlice);
 
-
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1210);
+console.log(contaPoupanca);

@@ -18,7 +18,7 @@ export class ContaCorrente {
         return this._cliente;
     };
 
-    _saldo = 0; /* como o js nao possui sintax para atributos privados a convesao da comunidade e usar _antes do atributo para indicar que o mesmo e um atributo privado */
+    /* como o js nao possui sintax para atributos privados a convesao da comunidade e usar _antes do atributo para indicar que o mesmo e um atributo privado */
 
     get saldo(){
         return this._saldo;
@@ -28,6 +28,7 @@ export class ContaCorrente {
     constructor(cliente, agencia){
         this.agencia = agencia;
         this.cliente = cliente; /* aqui estamos usando nosso acesso do get */
+        this._saldo = 0; 
         ContaCorrente.numeroDeContas += 1;/* chamando o atributo estatico que vai servir de contador para nossas contas */
     };
 
