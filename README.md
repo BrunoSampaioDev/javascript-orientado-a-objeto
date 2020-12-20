@@ -21,7 +21,7 @@ Exercício executado com base no aprendizado do curso da *Alura* de _orientaçã
 - [x] Gerenciamento de memória
 
 
-### Acessando atributos privado
+### Acessando atributos privados
 - [x] Null e undefined
 - [x] Getters e Setters
 - [x] Encapsulando com assessores
