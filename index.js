@@ -1,7 +1,7 @@
 /* IMPORTANDO CLASSES DE OUTROS ARQUIVOS */
-import {Cliente} from "./Cliente.js"
-import {ContaCorrente} from "./ContaCorrente.js"
-import { ContaPoupanca } from "./contaPoupanca.js";
+import {Cliente} from "./Cliente.js";
+import {ContaCorrente} from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
 /* Nao esqueca de gerar o package.jason */
 
@@ -13,12 +13,16 @@ const cliente2 = new Cliente('Alice',32323456534);
 
 
 /* ADICIONANDO NOVA CONTA CORRENTE */
-const contaCorrenteRicardo = new ContaCorrente(cliente1, 1210);
+const contaCorrenteRicardo = new ContaCorrente(0, cliente1, 1210);
 
-const ContaCorrenteAlice = new ContaCorrente(cliente2, 105);
+const ContaCorrenteAlice = new ContaCorrente(0,cliente2, 105);
+
+const contaPoupancaRicardo = new ContaPoupanca(50, cliente1, 1210);
+
 
 /* Depositando valores na conta do Ricardo */
 contaCorrenteRicardo.depositar(550);
+ContaCorrenteAlice.depositar(100)
 
 /* Sacando valor da conta do ricardo */
 contaCorrenteRicardo.sacar(50);
@@ -26,10 +30,11 @@ contaCorrenteRicardo.sacar(50);
 
 /* Transferindo valores de uma conta para outra */
 contaCorrenteRicardo.transferir(200, ContaCorrenteAlice);
-
+ContaCorrenteAlice.transferir(50, contaPoupancaRicardo);
 
 console.log(contaCorrenteRicardo);
 console.log(ContaCorrenteAlice);
 
-const contaPoupanca = new ContaPoupanca(50, cliente1, 1210);
-console.log(contaPoupanca);
+
+contaPoupancaRicardo.sacar(10);
+console.log(contaPoupancaRicardo);
