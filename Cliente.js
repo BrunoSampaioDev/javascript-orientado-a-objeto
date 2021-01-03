@@ -6,10 +6,15 @@ export class Cliente {
     };
 
     /* Metodo construto */
-    constructor(nome, cpf){
+    constructor(nome, cpf, senha){
         this.nome = nome;
         this._cpf = cpf;
+        this._senha = senha;
     };
+
+    autenticar(){
+        return true;
+    }
 };
 
 /* A classe e um molde para definir o que queremos criar,

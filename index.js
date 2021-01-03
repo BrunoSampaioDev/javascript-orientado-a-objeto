@@ -1,7 +1,7 @@
 /* IMPORTANDO CLASSES DE OUTROS ARQUIVOS */
 import {Cliente} from "./Cliente.js";
-import {ContaCorrente} from "./ContaCorrente.js";
-import { ContaPoupanca } from "./ContaPoupanca.js";
+import {ContaCorrente} from "./Conta/ContaCorrente.js";
+import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
 
 /* Nao esqueca de gerar o package.jason */
 

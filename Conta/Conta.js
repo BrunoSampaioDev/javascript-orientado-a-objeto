@@ -1,9 +1,14 @@
 export class Conta{
 
     constructor(saldoInicial, cliente, agencia) {
+        if(this.constructor == Conta){
+            throw new Error('voce nao deveria instaciar um objeto do tipo conta.');
+        }
+        
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
+        
     }
 
     /* acessando um propriedade privada e defindo as regras para protejer a mesma */
@@ -26,8 +31,9 @@ export class Conta{
 
 
     sacar(valor) {
-        let taxa = 1;
-        return this._sacar(valor,taxa);
+       /*  let taxa = 1;
+        return this._sacar(valor,taxa); */
+        throw new Error('metodo saca e abstrato.');
     };
 
     _sacar(valor, taxa){
